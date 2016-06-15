@@ -1,0 +1,8 @@
+<h4>New Creature</h6>
+<%= form_for :creature, url: "/creatures", method: "post" do |f| %>
+  <h6>Name</h6>
+  <%= f.text_field :name %>
+  <h6>Description</h6>
+  <%= f.text_area :description %>
+  <%= f.submit "Save Creature" %>
+<% end %>
